@@ -3,7 +3,7 @@ cask "opndossier" do
   name "opndossier"
   desc "OPNsense configuration documentation and compliance auditing tool"
   homepage "https://github.com/EvilBit-Labs/opnDossier"
-  version "1.1.0"
+  version "1.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "opndossier" do
   on_macos do
     on_intel do
       url "https://github.com/EvilBit-Labs/opnDossier/releases/download/v#{version}/opnDossier_Darwin_x86_64.tar.gz"
-      sha256 "454d56db71c0a3b354bf2c2730c56a3e02f9a591ed2f93fe8dd9b02a79a460cc"
+      sha256 "34b26aff865430282c6379d482583c1015cfa1e8a2f086edc5716faa523bed11"
     end
     on_arm do
       url "https://github.com/EvilBit-Labs/opnDossier/releases/download/v#{version}/opnDossier_Darwin_arm64.tar.gz"
-      sha256 "a5e801ab65fb775160211e5d386a68ded24d6d6d0f6fa4f1b1e795ddedbb59f3"
+      sha256 "4e2d5ddcbd9bf52e5ced9e3a522f31435a67b14ca48ed3406bf11a54c33d3d50"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/EvilBit-Labs/opnDossier/releases/download/v#{version}/opnDossier_Linux_x86_64.tar.gz"
-      sha256 "ec219a9c25053fdacd646a35e2baf13176cd4f01a61d2e73552ef54c4899f861"
+      sha256 "48c0c8a83b7098dc69a230cb3f4cf6b3a9ee4f62c6f8eb338bfa6536ca826374"
     end
     on_arm do
       url "https://github.com/EvilBit-Labs/opnDossier/releases/download/v#{version}/opnDossier_Linux_arm64.tar.gz"
-      sha256 "3ce2fb4b50eadb20cf37549086295e6888e22e068430f244cac64cf8449aaa27"
+      sha256 "247d9068eb8eadf6cd140e02d7b3b79ff48e0c9c93a177e8c1b61925a38582cd"
     end
   end
 
