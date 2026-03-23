@@ -17,22 +17,22 @@ cask "opndossier" do
   on_macos do
     on_intel do
       url "https://github.com/EvilBit-Labs/opnDossier/releases/download/v#{version}/opnDossier_Darwin_x86_64.tar.gz"
-      sha256 "a4a12605e8243cd313e350a0cef84ff18cbfae5fbd877169857d9979258c4f90"
+      sha256 "e45874d9d9be7d2eda44c69df2fc0f21306f341c423f7270a34b3fd4abd88943"
     end
     on_arm do
       url "https://github.com/EvilBit-Labs/opnDossier/releases/download/v#{version}/opnDossier_Darwin_arm64.tar.gz"
-      sha256 "add274272c778710e0cb732e705cb21ad683b3dee3a22ab7ea7ffa96cc3eeca1"
+      sha256 "aaebfb1deb62a91f8150041c7422edf9b09baaa94a411c783ff298e84f727321"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/EvilBit-Labs/opnDossier/releases/download/v#{version}/opnDossier_Linux_x86_64.tar.gz"
-      sha256 "7c52fe507743201c9c9a4fe5982fe58b9d2983c819ee13f7488d182b3d64384d"
+      sha256 "9527288c4a1640998654af0d3bdeb5ec3d2efcebb789b8bb857756aa961ec244"
     end
     on_arm do
       url "https://github.com/EvilBit-Labs/opnDossier/releases/download/v#{version}/opnDossier_Linux_arm64.tar.gz"
-      sha256 "6e17bff4cbdad71bea88ded14cefaafe03d2356277c9761389e5eb814ccffa29"
+      sha256 "d0e2b4cc0bc275d3cc8c25f413c70341d646798c4ac90000ea5418a31f3601d2"
     end
   end
 
