@@ -1,25 +1,25 @@
 class LibmagicRs < Formula
   desc "A pure-Rust implementation of libmagic for file type identification"
-  homepage "https://evilbitlabs.io/libmagic-rs"
-  version "0.1.1"
+  homepage "https://evilbit-labs.github.io/libmagic-rs/"
+  version "0.12.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.1.1/libmagic-rs-aarch64-apple-darwin.tar.xz"
-      sha256 "895aac30cd19a14b09547daaaa35f616b90a7d265f6494a8585eec860967a47b"
+      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.12.1/libmagic-rs-aarch64-apple-darwin.tar.xz"
+      sha256 "f49fbc19e9b17914950005dd3ec67eafcb2eb9e613ef350f68c43214558f3daf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.1.1/libmagic-rs-x86_64-apple-darwin.tar.xz"
-      sha256 "3343d6ee29a25929bb94bc68b20a05a7a8f067c1dbbe70c72ba93df24ecbb9f9"
+      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.12.1/libmagic-rs-x86_64-apple-darwin.tar.xz"
+      sha256 "7ad5a45fcb8d10b1f147da7e7ce174f5528d683517605378d9db28fa4a8b64ff"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.1.1/libmagic-rs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5d7788295e40566dde67f29254bc95df1e9990af029958888ffa1447a94c3126"
+      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.12.1/libmagic-rs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d9042f16c1d33db810960a978ed448671036ad5c1fc58fe82039e866368ddbca"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.1.1/libmagic-rs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "85c7b3aef254261654ff9a201be1fb80d0d038d8b69a331865fd18249553596d"
+      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.12.1/libmagic-rs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c0b81cd9a42738f25ead349747771cb534a4ae7329e086d7ed3f232c74385055"
     end
   end
   license "Apache-2.0"
@@ -51,10 +51,18 @@ class LibmagicRs < Formula
   end
 
   def install
-    bin.install "rmagic" if OS.mac? && Hardware::CPU.arm?
-    bin.install "rmagic" if OS.mac? && Hardware::CPU.intel?
-    bin.install "rmagic" if OS.linux? && Hardware::CPU.arm?
-    bin.install "rmagic" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "rmagic"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "rmagic"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "rmagic"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "rmagic"
+    end
 
     install_binary_aliases!
 
