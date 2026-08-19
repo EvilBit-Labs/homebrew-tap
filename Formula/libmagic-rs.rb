@@ -1,25 +1,25 @@
 class LibmagicRs < Formula
   desc "A pure-Rust implementation of libmagic for file type identification"
   homepage "https://evilbit-labs.github.io/libmagic-rs/"
-  version "0.12.1"
+  version "0.12.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.12.1/libmagic-rs-aarch64-apple-darwin.tar.xz"
-      sha256 "f49fbc19e9b17914950005dd3ec67eafcb2eb9e613ef350f68c43214558f3daf"
+      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.12.2/libmagic-rs-aarch64-apple-darwin.tar.xz"
+      sha256 "a78ff6e06e4f21aa8e95e0b23722eeca7e936f91a0a29778cd7b86ba8767eaa6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.12.1/libmagic-rs-x86_64-apple-darwin.tar.xz"
-      sha256 "7ad5a45fcb8d10b1f147da7e7ce174f5528d683517605378d9db28fa4a8b64ff"
+      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.12.2/libmagic-rs-x86_64-apple-darwin.tar.xz"
+      sha256 "1fd688a66d3e74ae11cde7de61c9dd84654288204271c55204edb7d918e81905"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.12.1/libmagic-rs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d9042f16c1d33db810960a978ed448671036ad5c1fc58fe82039e866368ddbca"
+      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.12.2/libmagic-rs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "12132fc3820d73da767ac86b007717bf46ef6d5c72c87a0b5827a4e36f6a8c5b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.12.1/libmagic-rs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c0b81cd9a42738f25ead349747771cb534a4ae7329e086d7ed3f232c74385055"
+      url "https://github.com/EvilBit-Labs/libmagic-rs/releases/download/v0.12.2/libmagic-rs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "70ae7ba50d96fde2e7795ee2eef5272faeca9d6ff76bac5cfa8e4cc92bbc2dc7"
     end
   end
   license "Apache-2.0"
